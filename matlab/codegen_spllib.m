@@ -1,11 +1,11 @@
-function codegen_myproj(varargin)
+function codegen_spllib(varargin)
 % Build script for myproj
 %
 %    codegen_myproj <options>
 %
 % Options are passed to codegen_lib.
 
-files = grep_files('myproj/*.m', '\n%#codegen\s+(-lib\s+)?-args');
+files = grep_files('spllib/*.m', '\n%#codegen\s+(-lib\s+)?-args');
 
 incs = myproj_includes;
 if ~empty(files)

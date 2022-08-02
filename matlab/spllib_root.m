@@ -1,4 +1,4 @@
-function rt = myproj_root
+function rt = spllib_root
 % root folder
 
 persistent root__;

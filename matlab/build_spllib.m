@@ -1,10 +1,10 @@
-function build_myproj(varargin)
+function build_spllib(varargin)
 
 disp('Building project ...');
 
 curpath = pwd;
 cleanup = onCleanup(@()cd(curpath));
-cd(myproj_root);
+cd(spllib_root);
 
 files = [grep_files('submodule1/*.m', '\n%#codegen\s+(-mex\s+)?-args') ...
     grep_files('submodule2/*.m', '\n%#codegen\s+(-mex\s+)?-args')];
